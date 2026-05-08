@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #ff9a00;
+  --color-primary-sub: #fec294;
+  --color-gray: #767676;
+  --color-gray-mid: #999999;
+  --color-line: #dbdbdb;
+  --color-gray-bg: #f1f1f1;
 }
 
 @theme inline {
@@ -22,5 +28,90 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Pretendard", sans-serif; */
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+*,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+figure,
+figcaption,
+span {
+  letter-spacing: -0.3px;
+}
+
+input:-webkit-autofill,
+select:-webkit-autofill,
+textarea:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled,
+button:disabled {
+  cursor: no-drop;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  cursor: no-drop;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea::placeholder {
+  color: #a2a2a2;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* font-family: "Pretendard", sans-serif; */
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+  /* font-family: "Pretendard", sans-serif; */
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+select::-ms-expand {
+  display: none;
 }
