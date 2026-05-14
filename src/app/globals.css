@@ -45,6 +45,7 @@
   --color-gray-mid: #999999;
   --color-line: #dbdbdb;
   --color-gray-bg: #f1f1f1;
+  --color-divider-bg: #f3f4f7;
   --text-xs: 12px;
 }
 
@@ -149,8 +150,8 @@ select::-ms-expand {
 }
 
 @utility header-layout {
-  height: calc(45px + 40px);
-  padding-top: 40px;
+  height: calc(45px + 10px);
+  padding-top: 10px;
   display: flex;
   align-items: center;
 }
@@ -164,4 +165,20 @@ select::-ms-expand {
 @utility scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@utility flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@utility after-img {
+  gap: 4px;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

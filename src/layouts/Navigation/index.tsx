@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -33,7 +34,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center inner-padding pb-8 pt-4 bg-white fixed bottom-0 left-0 right-0">
+    <nav className="flex items-center inner-padding pb-8 pt-4 bg-white fixed z-9999 bottom-0 left-0 right-0">
       <ul className="flex w-full">
         {navigationList.map((navItem) => {
           const isActive = pathname === navItem.href;
@@ -43,8 +44,10 @@ export default function Navigation() {
                 href={navItem.href}
                 className={`flex items-center justify-center flex-col gap-1 w-full`}
               >
-                <img
-                  className="w-5 h-5 object-contain"
+                <Image
+                  width={21}
+                  height={21}
+                  className="object-contain"
                   src={isActive ? navItem.activeIcon : navItem.icon}
                   alt={navItem.name}
                 />
