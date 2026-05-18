@@ -1,5 +1,5 @@
 import IconButton from "@/components/Button/IconButton";
-import FilterChips from "@/components/FilterChips";
+import HomeFilterRow from "./HomeFilterRow";
 import Tabs from "@/components/Tabs";
 import Image from "next/image";
 
@@ -26,13 +26,7 @@ function HomeHeader() {
       {/* 탭 */}
       <Tabs tabs={["전체", "모집중", "모집마감"]} />
       {/* 필터 */}
-      <FilterChips
-        filterData={[
-          { label: "최신순", iconUrl: "/img/arrow_down.svg" },
-          { label: "날짜 · 시간" },
-          { label: "인원" },
-        ]}
-      />
+      <HomeFilterRow />
     </header>
   );
 }

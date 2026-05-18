@@ -9,11 +9,11 @@ export interface FilterChipProps extends ButtonHTMLAttributes<HTMLButtonElement>
 
 function FilterChip({ label, iconUrl, isActive, ...props }: FilterChipProps) {
   return (
-    <li className="">
+    <li>
       <button
         {...props}
         aria-pressed={isActive}
-        className={`text-[13px] flex-center px-3.5 py-2 rounded-full font-medium  gap-1.25 border ${isActive ? "border-foreground font-semibold" : "border-line"}`}
+        className={`text-[13px] flex-center px-3.5 py-2 rounded-full font-medium  gap-1.25 border ${isActive ? "border-foreground font-semibold text-foreground" : "border-line text-gray-dark"}`}
       >
         {label}
         {iconUrl && (
