@@ -36,10 +36,39 @@
   src: url("/fonts/SUIT-ExtraBold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceLogo {
+  0%,
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+}
+
 @theme inline {
   --background: #ffffff;
   --foreground: #12263c;
-  --color-primary: #ff9a00;
+  /* --color-primary: #ff9a00; */
+  --color-primary: #f7b527;
   --color-primary-sub: #fff1dd;
   --color-gray: #767676;
   --color-gray-mid: #999999;
@@ -164,4 +193,28 @@ select::-ms-expand {
 @utility scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@utility font-gmarket {
+  font-family: "GMarketSans", sans-serif;
+}
+
+@utility animate-bounce-logo {
+  animation: bounceLogo 3s ease infinite;
+}
+
+@utility flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@utility after-img {
+  gap: 4px;
+  &::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

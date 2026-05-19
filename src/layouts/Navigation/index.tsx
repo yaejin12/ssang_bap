@@ -29,8 +29,12 @@ const navigationList = [
   },
 ];
 
+const HIDDEN_PATHS = ["/login"];
+
 export default function Navigation() {
   const pathname = usePathname();
+
+  if (HIDDEN_PATHS.includes(pathname)) return null;
 
   return (
     <nav className="flex items-center inner-padding pb-8 pt-4 bg-white fixed bottom-0 left-0 right-0">

@@ -1,8 +1,27 @@
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_188_411" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="18">
-<path d="M9.99998 1.75C14.5559 1.75 18.249 5.44307 18.249 9.99899C18.249 14.5549 14.5559 18.248 9.99998 18.248C8.66548 18.2498 7.35063 17.9264 6.16914 17.306L2.63033 18.2274C2.51208 18.2582 2.38784 18.2575 2.26992 18.2255C2.152 18.1935 2.04449 18.1312 1.95805 18.0449C1.8716 17.9585 1.80923 17.8511 1.77711 17.7332C1.74498 17.6153 1.74422 17.491 1.77491 17.3728L2.69549 13.8348C2.07335 12.652 1.74915 11.3354 1.75098 9.99899C1.75098 5.44307 5.44406 1.75 9.99998 1.75Z" fill="#006FFD"/>
-</mask>
-<g mask="url(#mask0_188_411)">
-<rect x="1" y="1" width="18" height="18" fill="#FF9A00"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 20 20">
+  <!-- Generator: Adobe Illustrator 30.3.0, SVG Export Plug-In . SVG Version: 2.1.3 Build 182)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #ff9a00;
+      }
+
+      .st2 {
+        fill: #006ffd;
+      }
+    </style>
+    <mask id="mask" x="1" y="1" width="18" height="18" maskUnits="userSpaceOnUse">
+      <g id="mask0_188_411">
+        <path class="st2" d="M10,1.75c4.56,0,8.25,3.69,8.25,8.25s-3.69,8.25-8.25,8.25c-1.33,0-2.65-.32-3.83-.94l-3.54.92c-.12.03-.24.03-.36,0-.12-.03-.23-.09-.31-.18-.09-.09-.15-.19-.18-.31-.03-.12-.03-.24,0-.36l.92-3.54c-.62-1.18-.95-2.5-.94-3.84C1.75,5.44,5.44,1.75,10,1.75Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="st0">
+    <rect class="st1" x="1" y="1" width="18" height="18"/>
+  </g>
 </svg>
